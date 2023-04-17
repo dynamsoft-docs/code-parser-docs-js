@@ -1,0 +1,94 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push events but only for the main branch
+   push:
+     branches: 
+  #   - main 
+     - preview 
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains jobs called "Build-main" and "Build-Preview"
+  Build-main:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    # The type of runner that the job will run on
+    runs-on: self-hosted
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      #- uses: actions/checkout@v2
+
+      # Runs a set of commands using the runners shell
+      - name: clear space
+        run: |
+          cd /home/ubuntu 
+          [ -d DCPDocJS ] && rm -rf DCPDocJS
+          [ -d code-parser-docs-js ] && rm -rf code-parser-docs-js
+          [ -d Docs-Template-Repo-Preview ] && rm -rf Docs-Template-Repo-Preview
+          cd /home/ubuntu
+
+      - name: Build the site
+        run: |
+          cd /home/ubuntu
+          mkdir -p DCPDocJS
+          git clone --depth 1 https://github.com/dynamsoft-docs/code-parser-docs-js.git code-parser-docs-js
+          git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview
+          cp -rfp ./code-parser-docs-js/* ./DCPDocJS/
+          cp -rfp ./Docs-Template-Repo-Preview/* ./DCPDocJS/
+          cd DCPDocJS && bundle exec jekyll build
+
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_DYNAMSOFT_LOCAL_SERVER }}
+          username: ${{ secrets.FTP_DYNAMSOFT_LOCAL_USER }}
+          password: ${{ secrets.FTP_DYNAMSOFT_LOCAL_PASSWORD }}
+          port: 21 
+          local-dir: /home/ubuntu/DDNDocServer/_site/
+          server-dir: /www.dynamsoft.com/code-parser/docs/js/
+
+  Build-Preview:
+    if: ${{ github.ref == 'refs/heads/preview' }}
+    # The type of runner that the job will run on
+    runs-on: self-hosted
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Runs a set of commands using the runners shell
+      - name: clear space
+        run: |
+          cd /home/ubuntu 
+          [ -d DCPDocJSPreview ] && rm -rf DCPDocJSPreview
+          [ -d code-parser-docs-js-preview ] && rm -rf code-parser-docs-js-preview 
+          [ -d Docs-Template-Repo-Preview ] && rm -rf Docs-Template-Repo-Preview
+          cd /home/ubuntu
+
+      - name: Build the site
+        run: |
+          cd /home/ubuntu
+          mkdir -p DCPDocJSPreview
+          git clone --depth 1 --branch preview https://${{ secrets.GIT_USER }}:${{ secrets.GIT_PAT }}@github.com/dynamsoft-docs/code-parser-docs-js.git code-parser-docs-js-preview
+          git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview
+          cp -rfp ./code-parser-docs-js-preview/* ./DCPDocJSPreview/
+          cp -rfp ./Docs-Template-Repo-Preview/* ./DCPDocJSPreview/
+          sed -i -e "1,3s/blob\/master$/blob\/preview/" \
+          -e "1,3s/blob\/main$/blob\/preview/" /home/ubuntu/DCPDocJSPreview/_config.yml
+          cd DCPDocJSPreview && bundle exec jekyll build
+
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_TEST_SITE_SERVER }}
+          username: ${{ secrets.FTP_TEST_SITE_USER }}
+          password: ${{ secrets.FTP_TEST_SITE_PASSWORD }}
+          port: 7500 
+          local-dir: /home/ubuntu/DCPDocJSPreview/_site/
+          server-dir: /www.dynamsoft.com/code-parser/docs/js/          
