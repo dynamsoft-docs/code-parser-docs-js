@@ -1,0 +1,45 @@
+repositoryUrl: https://github.com/dynamsoft-docs/code-parser-docs/blob/main
+repository: Dynamsoft/code-parser-docs
+docFullPath: https://www.dynamsoft.com/code-parser/docs
+firstLevelUrl: /code-parser/docs/
+docHomePage: /code-parser/docs/introduction/
+
+introduction: /code-parser/docs/introduction/
+parameters: /code-parser/docs/parameters/
+enumerations: /code-parser/docs/parameters/enum/
+parameters-reference: /code-parser/docs/parameters/reference/
+
+development: /code-parser/docs/development/
+
+cpp: /code-parser/docs/development/cplusplus/
+cpp_api: /code-parser/docs/development/cplusplus/api-reference/
+cpp_class: /code-parser/docs/development/cplusplus/api-reference/class/
+cpp_enum: /code-parser/docs/development/cplusplus/api-reference/enum/
+cpp_release_notes: /code-parser/docs/development/cplusplus/release-notes/
+
+
+javascript: /code-parser/docs/development/javascript/
+javascript-api: /code-parser/docs/development/javascript/api-reference/
+javascript-api-enum: /code-parser/docs/development/javascript/api-reference/enum/
+javascript-api-interface: /code-parser/docs/development/javascript/api-reference/interface/
+javascript-release-notes: /code-parser/docs/development/javascript/release-notes/
+
+assets: /code-parser/docs/assets/
+edit_icon: /code-parser/docs/assets/img-icon/edit-icon.png
+smile_icon: /code-parser/docs/assets/img-icon/icon-smile.png
+sad_icon: /code-parser/docs/assets/img-icon/icon-sad.png
+dbr_icon: /code-parser/docs/assets/img-icon/icon-dbr.svg
+dwt_icon: /code-parser/docs/assets/img-icon/icon-dwt.svg
+dnt_icon: /code-parser/docs/assets/img-icon/icon-dnt.svg
+
+release-notes: /code-parser/docs/release-notes/
+code_types: /code-parser/docs/code-types/
+
+useVersionTree: true
+
+baseurl: "/code-parser/docs"
+plugins:
+  - jemoji
+
+url: "https://www.dynamsoft.com" # sitemap root
+
