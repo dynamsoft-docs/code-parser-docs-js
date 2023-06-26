@@ -53,7 +53,7 @@ jobs:
           password: ${{ secrets.FTP_DYNAMSOFT_LOCAL_PASSWORD }}
           port: 21 
           local-dir: /home/ubuntu/DDNDocServer/_site/
-          server-dir: /www.dynamsoft.com/code-parser/docs/js/
+          server-dir: /www.dynamsoft.com/code-parser/docs/web/
 
   Build-Preview:
     if: ${{ github.ref == 'refs/heads/preview' }}
@@ -91,4 +91,4 @@ jobs:
           password: ${{ secrets.FTP_TEST_SITE_PASSWORD }}
           port: 7500 
           local-dir: /home/ubuntu/DCPDocJSPreview/_site/
-          server-dir: /www.dynamsoft.com/code-parser/docs/js/          
+          server-dir: /www.dynamsoft.com/code-parser/docs/web/          
