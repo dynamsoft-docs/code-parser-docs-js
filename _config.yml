@@ -1,0 +1,48 @@
+repositoryUrl: https://github.com/dynamsoft-docs/code-parser-docs-js/blob/main
+repository: dynamsoft-docs/code-parser-docs-js
+docFullPath: https://www.dynamsoft.com/code-parser/docs/web
+firstLevelUrl: /code-parser/docs/web/
+docHomePage: /code-parser/docs/core/introduction/
+
+javascript: /code-parser/docs/web/programming/javascript/
+javascript-api: /code-parser/docs/web/programming/javascript/api-reference/
+javascript-api-enum: /code-parser/docs/web/programming/javascript/api-reference/enum/
+javascript-api-interface: /code-parser/docs/web/programming/javascript/api-reference/interface/
+javascript-release-notes: /code-parser/docs/web/programming/javascript/release-notes/
+
+assets: /code-parser/docs/web/assets/
+edit_icon: /code-parser/docs/web/assets/img-icon/edit-icon.png
+smile_icon: /code-parser/docs/web/assets/img-icon/icon-smile.png
+sad_icon: /code-parser/docs/web/assets/img-icon/icon-sad.png
+dbr_icon: /code-parser/docs/web/assets/img-icon/icon-dbr.svg
+dwt_icon: /code-parser/docs/web/assets/img-icon/icon-dwt.svg
+dnt_icon: /code-parser/docs/web/assets/img-icon/icon-dnt.svg
+
+release-notes: /code-parser/docs/core/release-notes/
+
+useVersionTree: true
+
+baseurl: "/code-parser/docs/web"
+plugins:
+  - jemoji
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default-layout"
+      noTitleIndex: true
+      needAutoGenerateSidebar: true
+      needGenerateH3Content: true
+  - scope: 
+      path: "programming/javascript" 
+    values: 
+      docRootName: "Code Parser JS Edition" 
+      docHomePage: "/code-parser/docs/web/programming/javascript/"
+  - scope:
+      path: "Hide_Tree_Page.html"
+    values:
+      sitemap: false
+
+url: "https://www.dynamsoft.com" # sitemap root
+
