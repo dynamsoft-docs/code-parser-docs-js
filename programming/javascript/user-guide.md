@@ -195,7 +195,7 @@ function foo() {
 
 #### Set code format
 
-Before parsing, you need to specify the format of code to parse. See [EnumCodeFormat](https://www.dynamsoft.com/code-parser/docs/development/javascript/api-reference/enum/EnumCodeFormat.html?ver=1.0.2) to check if DCP-JS covers the code format you need.
+Before parsing, you need to specify the format of code to parse. See [EnumCodeFormat](https://www.dynamsoft.com/code-parser/docs/web/programming/javascript/api-reference/enum/EnumCodeFormat.html?ver=1.0.2) to check if DCP-JS covers the code format you need.
 
 ```javascript
 parser.setCodeFormat(format); //format: EnumCodeFormat
@@ -224,4 +224,4 @@ parser.parseData(data); //data: number[] | Uint8Array | string
 
 ## API Documentation
 
-For more information about the APIs of DCP-JS, read [Dynamsoft Code Parser JavaScript Edition API Reference](https://www.dynamsoft.com/code-parser/docs/development/javascript/api-reference/?ver=1.1.0).
+For more information about the APIs of DCP-JS, read [Dynamsoft Code Parser JavaScript Edition API Reference](https://www.dynamsoft.com/code-parser/docs/web/programming/javascript/api-reference/?ver=1.1.0).

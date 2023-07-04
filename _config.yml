@@ -1,45 +1,48 @@
-repositoryUrl: https://github.com/dynamsoft-docs/code-parser-docs/blob/main
-repository: dynamsoft-docs/code-parser-docs
-docFullPath: https://www.dynamsoft.com/code-parser/docs
-firstLevelUrl: /code-parser/docs/
-docHomePage: /code-parser/docs/introduction/
+repositoryUrl: https://github.com/dynamsoft-docs/code-parser-docs-js/blob/main
+repository: dynamsoft-docs/code-parser-docs-js
+docFullPath: https://www.dynamsoft.com/code-parser/docs/web
+firstLevelUrl: /code-parser/docs/web/
+docHomePage: /code-parser/docs/core/introduction/
 
-introduction: /code-parser/docs/introduction/
-parameters: /code-parser/docs/parameters/
-enumerations: /code-parser/docs/parameters/enum/
-parameters-reference: /code-parser/docs/parameters/reference/
-
-development: /code-parser/docs/development/
-
-cpp: /code-parser/docs/development/cplusplus/
-cpp_api: /code-parser/docs/development/cplusplus/api-reference/
-cpp_class: /code-parser/docs/development/cplusplus/api-reference/class/
-cpp_enum: /code-parser/docs/development/cplusplus/api-reference/enum/
-cpp_release_notes: /code-parser/docs/development/cplusplus/release-notes/
-
-
-javascript: /code-parser/docs/development/javascript/
-javascript-api: /code-parser/docs/development/javascript/api-reference/
-javascript-api-enum: /code-parser/docs/development/javascript/api-reference/enum/
-javascript-api-interface: /code-parser/docs/development/javascript/api-reference/interface/
-javascript-release-notes: /code-parser/docs/development/javascript/release-notes/
+javascript: /code-parser/docs/web/programming/javascript/
+javascript-api: /code-parser/docs/web/programming/javascript/api-reference/
+javascript-api-enum: /code-parser/docs/web/programming/javascript/api-reference/enum/
+javascript-api-interface: /code-parser/docs/web/programming/javascript/api-reference/interface/
+javascript-release-notes: /code-parser/docs/web/programming/javascript/release-notes/
 
 assets: /code-parser/docs/assets/
-edit_icon: /code-parser/docs/assets/img-icon/edit-icon.png
-smile_icon: /code-parser/docs/assets/img-icon/icon-smile.png
-sad_icon: /code-parser/docs/assets/img-icon/icon-sad.png
-dbr_icon: /code-parser/docs/assets/img-icon/icon-dbr.svg
-dwt_icon: /code-parser/docs/assets/img-icon/icon-dwt.svg
-dnt_icon: /code-parser/docs/assets/img-icon/icon-dnt.svg
+edit_icon: /code-parser/docs/web/assets/img-icon/edit-icon.png
+smile_icon: /code-parser/docs/web/assets/img-icon/icon-smile.png
+sad_icon: /code-parser/docs/web/assets/img-icon/icon-sad.png
+dbr_icon: /code-parser/docs/web/assets/img-icon/icon-dbr.svg
+dwt_icon: /code-parser/docs/web/assets/img-icon/icon-dwt.svg
+dnt_icon: /code-parser/docs/web/assets/img-icon/icon-dnt.svg
 
-release-notes: /code-parser/docs/release-notes/
-code_types: /code-parser/docs/code-types/
+release-notes: /code-parser/docs/core/release-notes/
 
 useVersionTree: true
 
-baseurl: "/code-parser/docs"
+baseurl: "/code-parser/docs/web"
 plugins:
   - jemoji
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default-layout"
+      noTitleIndex: true
+      needAutoGenerateSidebar: true
+      needGenerateH3Content: true
+  - scope: 
+      path: "programming/javascript" 
+    values: 
+      docRootName: "Code Parser JS Edition" 
+      docHomePage: "/code-parser/docs/web/programming/javascript/"
+  - scope:
+      path: "Hide_Tree_Page.html"
+    values:
+      sitemap: false
 
 url: "https://www.dynamsoft.com" # sitemap root
 
