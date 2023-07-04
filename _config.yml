@@ -10,7 +10,7 @@ javascript-api-enum: /code-parser/docs/web/programming/javascript/api-reference/
 javascript-api-interface: /code-parser/docs/web/programming/javascript/api-reference/interface/
 javascript-release-notes: /code-parser/docs/web/programming/javascript/release-notes/
 
-assets: /code-parser/docs/assets/
+assets: /code-parser/docs/web/assets/
 edit_icon: /code-parser/docs/web/assets/img-icon/edit-icon.png
 smile_icon: /code-parser/docs/web/assets/img-icon/icon-smile.png
 sad_icon: /code-parser/docs/web/assets/img-icon/icon-sad.png
