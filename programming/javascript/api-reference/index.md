@@ -30,33 +30,33 @@ The APIs for this class include:
 
 | API Name | Description |
 |---|---|
-| [license](./licenseControl.md#license) | Initializes license of DCP. |
+| [license](./licenseControl.html#license) | Initializes license of DCP. |
 
 ### Initialize Engine
 
 | API Name | Description |
 |---|---|
-| [engineResourcePath](./initializeEngine.md#engineresourcepath) | Specifies the path of WASM engine. |
-| [loadWasm()](./initializeEngine.md#loadwasm) | Loads and compiles the WASM. |
+| [engineResourcePath](./initializeEngine.html#engineresourcepath) | Specifies the path of WASM engine. |
+| [loadWasm()](./initializeEngine.html#loadwasm) | Loads and compiles the WASM. |
 
 ### Create and Destroy
 
 | API Name | Description |
 |---|---|
-| [createInstance()](./codeParser.md#createinstance) | Creates a `CodeParser` instance. |
-| [destroyContext()](./codeParser.md#destroycontext) | Destroys the `CodeParser` instance in WASM. |
+| [createInstance()](./codeParser.html#createinstance) | Creates a `CodeParser` instance. |
+| [destroyContext()](./codeParser.html#destroycontext) | Destroys the `CodeParser` instance in WASM. |
 
 ### Set Code Format
 
 | API Name | Description |
 |---|---|
-| [setCodeFormat()](./codeParser.md#setcodeformat) | Sets input code's format. |
+| [setCodeFormat()](./codeParser.html#setcodeformat) | Sets input code's format. |
 
 ### Parse Code Data
 
 | API Name | Description |
 |---|---|
-| [parseData()](./codeParser.md#parsedata) | Parses code data for readable results. |
+| [parseData()](./codeParser.html#parsedata) | Parses code data for readable results. |
 
 <!--
 
@@ -64,8 +64,8 @@ The APIs for this class include:
 
 | API Name | Description |
 |---|---|
-| [setCryptoPublicKey()](CodeParser.md#setcryptopublickey) | Set a public key if code parsing needs. |
-| [setCertificate()](CodeParser.md#setcertificate) | Set a certificate if code parsing needs. |
+| [setCryptoPublicKey()](CodeParser.html#setcryptopublickey) | Set a public key if code parsing needs. |
+| [setCertificate()](CodeParser.html#setcertificate) | Set a certificate if code parsing needs. |
 
 -->
 
@@ -75,12 +75,12 @@ In order to make the code more predictable and readable, the library defines a s
 
 ### Interfaces
 
-* [CodeParserException](./interface/CodeParserException.md)
-* [BasicPersonalInfo](./interface/BasicPersonalInfo.md)
-* [ParseResult](./interface/ParseResult.md)
+* [CodeParserException](./interface/CodeParserException.html)
+* [BasicPersonalInfo](./interface/BasicPersonalInfo.html)
+* [ParseResult](./interface/ParseResult.html)
 
 ### Enums
 
-* [EnumErrorCode](./enum/EnumErrorCode.md)
-* [EnumCodeFormat](./enum/EnumCodeFormat.md)
-* [EnumResultInfoType](./enum/EnumResultInfoType.md)
+* [EnumErrorCode](./enum/EnumErrorCode.html)
+* [EnumCodeFormat](./enum/EnumCodeFormat.html)
+* [EnumResultInfoType](./enum/EnumResultInfoType.html)
