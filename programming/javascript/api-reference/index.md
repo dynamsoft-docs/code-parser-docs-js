@@ -18,56 +18,63 @@ The Dynamsoft Code Parser JavaScript library comes with one primary class: `Code
 A CodeParser takes code data in forms of byte array or plain string as input and returns parsed results. The following code snippet shows its basic usage:
 
 ```js
+Dynamsoft.License.LicenseManager.initLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9"); //Change to your own license key
 let parser = await Dynamsoft.DCP.CodeParser.createInstance();
-parser.setCodeFormat(enumcodeformat);
-let result = await parser.parseData(code);
-console.log(result);
+// Assume "code" is the string that needs to be parsed.
+let result = await parser.parse(code);
+if(result){
+    let codeType = result.getCodeType();
+    console.log("The type of the code is: " + codeType);
+    if (codeType == "MRTD_TD3_PASSPORT")
+    {
+        let passportNumber = result.getFieldValue("passportNumber");
+        if (passportNumber)
+        {
+            console.log("The passport number is : " + passportNumber);
+        }
+        // Check out https://www.dynamsoft.com/code-parser/docs/core/code-types/mrtd.html#mrtd_td3_passport-fields for more supported fields
+    }
+}
 ```
 
 The APIs for this class include:
 
-### Initialize License
-
-| API Name | Description |
-|---|---|
-| [license](./licenseControl.html#license) | Initializes license of DCP. |
-
 ### Initialize Engine
 
-| API Name | Description |
-|---|---|
-| [engineResourcePath](./initializeEngine.html#engineresourcepath) | Specifies the path of WASM engine. |
+| API Name                                       | Description                  |
+| ---------------------------------------------- | ---------------------------- |
 | [loadWasm()](./initializeEngine.html#loadwasm) | Loads and compiles the WASM. |
 
 ### Create and Destroy
 
-| API Name | Description |
-|---|---|
-| [createInstance()](./codeParser.html#createinstance) | Creates a `CodeParser` instance. |
-| [destroyContext()](./codeParser.html#destroycontext) | Destroys the `CodeParser` instance in WASM. |
+| API Name                                             | Description                                                  |
+| ---------------------------------------------------- | ------------------------------------------------------------ |
+| [createInstance()](./codeParser.html#createinstance) | Creates a `CodeParser` instance.                             |
+| [dispose()](./codeParser.html#dispose)               | Releases all resources used by the `CodeParser` instance.    |
+| [disposed](./codeParser.html#dispose)                | Returns whether the `CodeParser` instance has been released. |
 
-### Set Code Format
+### Change Settings
 
-| API Name | Description |
-|---|---|
-| [setCodeFormat()](./codeParser.html#setcodeformat) | Sets input code's format. |
+| API Name                                            | Description                                               |
+| --------------------------------------------------- | --------------------------------------------------------- |
+| [initSettings()](./codeParser.html#initsettings)    | Sets up the `CodeParser` instance for a parsing task.     |
+| [resetSettings()](./codeParser.html#resetsetttings) | Resets the `CodeParser` instance to the default settings. |
 
 ### Parse Code Data
 
-| API Name | Description |
-|---|---|
-| [parseData()](./codeParser.html#parsedata) | Parses code data for readable results. |
+| API Name                               | Description                            |
+| -------------------------------------- | -------------------------------------- |
+| [parse()](./codeParser.html#parsedata) | Parses code data for readable results. |
 
-<!--
+## CodeParserModule
 
-### Set Encryption Key
+This class defines common functionality in the CodeParser module. At present, it has the following API:
 
-| API Name | Description |
-|---|---|
-| [setCryptoPublicKey()](CodeParser.html#setcryptopublickey) | Set a public key if code parsing needs. |
-| [setCertificate()](CodeParser.html#setcertificate) | Set a certificate if code parsing needs. |
+| API Name                                                         | Description                                                        |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------ |
+| static [getVersion()](./codeParserModule.md#getversion)          | Returns the version of the CodeParser module.                      |
+| [engineResourcePath](./codeParserModule.html#engineresourcepath) | Specifies the path to find the engine(external WebAssembly files). |
 
--->
 
 ## Interfaces and Enums
 
@@ -76,11 +83,9 @@ In order to make the code more predictable and readable, the library defines a s
 ### Interfaces
 
 * [CodeParserException](./interface/CodeParserException.html)
-* [BasicPersonalInfo](./interface/BasicPersonalInfo.html)
 * [ParseResult](./interface/ParseResult.html)
 
 ### Enums
 
-* [EnumErrorCode](./enum/EnumErrorCode.html)
-* [EnumCodeFormat](./enum/EnumCodeFormat.html)
-* [EnumResultInfoType](./enum/EnumResultInfoType.html)
+* [EnumMappingStatus](./enum/EnumMappingStatus.md)
+* [EnumValidationStatus](./enum/EnumValidationStatus.md)

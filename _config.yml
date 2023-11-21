@@ -19,6 +19,7 @@ dwt_icon: /code-parser/docs/web/assets/img-icon/icon-dwt.svg
 dnt_icon: /code-parser/docs/web/assets/img-icon/icon-dnt.svg
 
 release-notes: /code-parser/docs/core/release-notes/
+code_types: /code-parser/docs/core/code-types/
 
 useVersionTree: true
 
