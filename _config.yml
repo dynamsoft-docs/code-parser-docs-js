@@ -56,5 +56,7 @@ defaults:
     values:
       sitemap: false
 
+edition: js
+
 url: "https://www.dynamsoft.com" # sitemap root
 
