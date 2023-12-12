@@ -13,9 +13,9 @@ This is the index page of the documentation for Dynamsoft Code Parser JavaScript
 
 ## Getting Started
 
-Read the User Guide to learn how to use the JavaScript edition of Dynamsoft Code Parser in your website.
+To learn how to use the JavaScript edition of Dynamsoft Code Parser in your website, read:
 
-- [User Guide](user-guide.md)
+- [User Guide](user-guide/index.md)
 
 ## API Reference
 
