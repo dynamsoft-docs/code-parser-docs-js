@@ -36,8 +36,8 @@ The `CodeParser` class enable users to parse given bytes or a string.
 
 ## Interfaces
 
-* [ParsedResultItem](./interface/ParsedResultItem.md)
-* [ParsedResult](./interface/ParsedResult.md)
+* [ParsedResultItem](./interface/parsed-result-item.md)
+* [ParsedResult](./interface/parsed-result.md)
 
 ## Enumerations
 
