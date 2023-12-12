@@ -13,24 +13,19 @@ This is the index page of the documentation for Dynamsoft Code Parser JavaScript
 
 ## Getting Started
 
-Read the [User Guide](user-guide/) to learn how to use the JavaScript edition of Dynamsoft Code Parser in your website.
+Read the User Guide to learn how to use the JavaScript edition of Dynamsoft Code Parser in your website.
+
 - [User Guide](user-guide.md)
 
 ## API Reference
+
+For a overview of the APIs, see:
 
 - [API Reference](api-reference/index.md)
 
 ## Release Notes
 
-- [Version 1.x](release-notes/js-1.md)
+For a peek of DBR history, check:
 
+- [Release Notes](release-notes/index.md)
 
-## See Also
-
-### API Reference
-
-For a overview of the APIs, see the [API Reference](api-reference/).
-
-### Release Notes
-
-For a peek of DBR history, check the [Release Notes](release-notes/).
