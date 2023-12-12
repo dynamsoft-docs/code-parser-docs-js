@@ -4,13 +4,15 @@ docFullPath: https://www.dynamsoft.com/code-parser/docs/web
 firstLevelUrl: /code-parser/docs/web/
 docHomePage: /code-parser/docs/core/introduction/
 
-javascript: /code-parser/docs/web/programming/javascript/
-javascript-api: /code-parser/docs/web/programming/javascript/api-reference/
-javascript-api-enum: /code-parser/docs/web/programming/javascript/api-reference/enum/
-javascript-api-interface: /code-parser/docs/web/programming/javascript/api-reference/interface/
-javascript-release-notes: /code-parser/docs/web/programming/javascript/release-notes/
+js: /code-parser/docs/web/programming/javascript/
+dcp_js_api: /code-parser/docs/web/programming/javascript/api-reference/
+dcp_enum: /code-parser/docs/web/programming/javascript/api-reference/enum/
+js_release_notes: /code-parser/docs/web/programming/javascript/release-notes/
 
 dcv_enumerations: /capture-vision/docs/core/enums/
+
+dcv_js_api: /capture-vision/docs/web/programming/javascript/api-reference/
+dcv_introduction: /capture-vision/docs/core/introduction/
 
 assets: /code-parser/docs/web/assets/
 edit_icon: /code-parser/docs/web/assets/img-icon/edit-icon.png
@@ -20,7 +22,7 @@ dbr_icon: /code-parser/docs/web/assets/img-icon/icon-dbr.svg
 dwt_icon: /code-parser/docs/web/assets/img-icon/icon-dwt.svg
 dnt_icon: /code-parser/docs/web/assets/img-icon/icon-dnt.svg
 
-release-notes: /code-parser/docs/core/release-notes/
+release_notes: /code-parser/docs/core/release-notes/
 code_types: /code-parser/docs/core/code-types/
 
 useVersionTree: true
