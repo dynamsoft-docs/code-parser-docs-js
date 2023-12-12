@@ -65,15 +65,15 @@ Gets the value of a specified field from the parsed result.
 getFieldValue(fieldName: string): Promise<string>;
 ```
 
-### Parameters
+**Parameters**
 
 `fieldName`: specifies the name of the field.
 
-### Return Value
+**Return Value**
 
 A promise resolving to a string which contains the field value.
 
-### Code Snippet
+**Code Snippet**
 
 ```js
 await parser.getFieldValue("passportNumber");
@@ -87,21 +87,21 @@ Gets the mapping status of a specified field from the parsed result.
 getFieldMappingStatus: (fieldName: string) => EnumMappingStatus;
 ```
 
-### Parameters
+**Parameters**
 
 `fieldName`: specifies the name of the field.
 
-### Return Value
+**Return Value**
 
 A value that indicates whether the mapping succeeded.
 
-### Code Snippet
+**Code Snippet**
 
 ```js
 await parser.getFieldMappingStatus("nationality");
 ```
 
-### See Also
+**See Also**
 
 * [EnumMappingStatus](../enum/EnumMappingStatus.md)
 
@@ -113,20 +113,20 @@ Gets the validation status of a specified field from the parsed result.
 getFieldValidationStatus: (fieldName: string) => EnumValidationStatus;
 ```
 
-### Parameters
+**Parameters**
 
 `fieldName`: specifies the name of the field.
 
-### Return Value
+**Return Value**
 
 A value that indicates whether the validation succeeded.
 
-### Code Snippet
+**Code Snippet**
 
 ```js
 await parser.getFieldValidationStatus("passportNumber");
 ```
 
-### See Also
+**See Also**
 
 * [EnumValidationStatus](../enum/EnumValidationStatus.md)

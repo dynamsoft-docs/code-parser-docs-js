@@ -14,8 +14,8 @@ noTitleIndex: true
 
 ### Changelog
 
-* In this version, `DynamsoftCodeParser` SDK has been revamped to integrate with the `DynamsoftCaptureVision (DCV)` architecture, which is newly established to aggregate the features of multiple functional products powered by Dynamsoft. The features are designed to be pluggable, customizable and interactable. In addition, the functional products share the computation so that their processing speed is much higher than when they work individually.
-* In this version, the following code types are supported:
+* The `DynamsoftCodeParser` SDK has been revamped to integrate with the newly established [DynamsoftCaptureVision (DCV)](https://www.dynamsoft.com/capture-vision/docs/core/architecture/index.html) architecture.
+* The definition of a code type is now associated with a specific coding standard. These are the supported code types:
   * [MRTD_TD1_ID]({{ site.code_types }}mrtd.html)
   * [MRTD_TD2_ID]({{ site.code_types }}mrtd.html)
   * [MRTD_TD2_VISA]({{ site.code_types }}mrtd.html)
@@ -31,12 +31,12 @@ The following shows the API changes
 
 * Static API changes:
 
-| Version 1.x                                 | Version 2.x                                       |
-| ------------------------------------------- | ------------------------------------------------- |
-| Dynamsoft.DCP.CodeParser.license            | Dynamsoft.License.LicenseManager.initLicense()    |
-| Dynamsoft.DCP.CodeParser.engineResourcePath | Dynamsoft.DCP.CodeParserModule.engineResourcePath |
-| Dynamsoft.DCP.CodeParser.loadWasm()         | Dynamsoft.DCP.CodeParser.loadWasm()               |
-| Dynamsoft.DCP.CodeParser.createInstance()   | Dynamsoft.DCP.CodeParser.createInstance()         |
+| Version 1.x                                 | Version 2.x                                    |
+| ------------------------------------------- | ---------------------------------------------- |
+| Dynamsoft.DCP.CodeParser.license            | Dynamsoft.License.LicenseManager.initLicense() |
+| Dynamsoft.DCP.CodeParser.engineResourcePath | Dynamsoft.Core.CoreModule.engineResourcePaths  |
+| Dynamsoft.DCP.CodeParser.loadWasm()         | Dynamsoft.Core.CoreModule.loadWasm()           |
+| Dynamsoft.DCP.CodeParser.createInstance()   | Dynamsoft.DCP.CodeParser.createInstance()      |
 
 * Instance API changes:
 

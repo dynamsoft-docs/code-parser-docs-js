@@ -14,13 +14,13 @@ The ParsedResult interface provides a structure representing the result object r
 
 ```ts
 interface ParsedResult {
-  readonly originalImageHashId: string;
-  readonly originalImageTag: Core.ImageTag;
+  originalImageHashId: string;
+  originalImageTag: Core.ImageTag;
   parsedResultItems: Array<ParsedResultItem>;
   hasItem: (item: ParsedResultItem) => boolean;
   removeItem: (item: ParsedResultItem) => void;
-  readonly errorCode: number;
-  readonly errorString: string;
+  errorCode: number;
+  errorString: string;
 }
 ```
 
@@ -50,7 +50,7 @@ Returns the tag of the original image.
 originalImageTag: Core.ImageTag;
 ```
 
-### See Also
+**See Also**
 
 * [ImageTag](https://www.dynamsoft.com/capture-vision/docs/web/programming/javascript/api-reference/core/basic-structures/image-tag.html)
 

@@ -68,13 +68,11 @@ The APIs for this class include:
 
 ## CodeParserModule
 
-This class defines common functionality in the CodeParser module. At present, it has the following API:
+This class defines common functionality in the CodeParser module.
 
-| API Name                                                         | Description                                                        |
-| ---------------------------------------------------------------- | ------------------------------------------------------------------ |
-| static [getVersion()](./codeParserModule.md#getversion)          | Returns the version of the CodeParser module.                      |
-| [engineResourcePath](./codeParserModule.html#engineresourcepath) | Specifies the path to find the engine(external WebAssembly files). |
-
+| API Name                                                | Description                                   |
+| ------------------------------------------------------- | --------------------------------------------- |
+| static [getVersion()](./codeParserModule.md#getversion) | Returns the version of the CodeParser module. |
 
 ## Interfaces and Enums
 
