@@ -75,9 +75,9 @@ In order to make the code more predictable and readable, the library defines a s
 
 ### Interfaces
 
-* [CodeParserException](./interface/CodeParserException.html)
-* [BasicPersonalInfo](./interface/BasicPersonalInfo.html)
-* [ParseResult](./interface/ParseResult.html)
+* [CodeParserException](./interfaces/CodeParserException.html)
+* [BasicPersonalInfo](./interfaces/BasicPersonalInfo.html)
+* [ParseResult](./interfaces/ParseResult.html)
 
 ### Enums
 

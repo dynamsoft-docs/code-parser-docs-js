@@ -134,7 +134,7 @@ await parser.parseData(YOUR-CODE-THAT-NEEDS-PARSING);
 **See Also**
 
 * [Uint8Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array)
-* [ParseResult](./interface/ParseResult.md)
+* [ParseResult](./interfaces/ParseResult.md)
 
 <!--
 

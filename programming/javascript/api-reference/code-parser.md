@@ -135,4 +135,4 @@ parse: (source: Array<number> | string, taskSettingName?: string) => Promise<Par
 
 **Return Value**
 
-Returns an array of [ParsedResultItem](./interface/ParsedResultItem.md) containing the human-readable results.
+Returns an array of [ParsedResultItem](./interfaces/parsed-result-item.md) containing the human-readable results.
