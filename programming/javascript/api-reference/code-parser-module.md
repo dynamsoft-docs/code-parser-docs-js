@@ -30,9 +30,9 @@ The `CodeParser` class enable users to parse given bytes or a string.
 | `static` [createInstance()](./code-parser.md#createinstance) | Initializes a new instance of the `CodeParser` class.                  |
 | [dispose()](./code-parser.md#dispose)                        | Releases all resources used by the `CodeParser` object.                |
 | [disposed](./code-parser.md#disposed)                        | Returns whether the `CodeParser` object has been disposed of.          |
-| [`initSettings`](./code-parser.md#initsettings)              | Initializes runtime settings with the settings in a given JSON string. |
-| [`resetSettings`](./code-parser.md#resetsettings)            | Resets runtime settings to default.                                    |
-| [`parse`](./code-parser.md#parse)                            | Parses code data for readable results.                                 |
+| [initSettings](./code-parser.md#initsettings)              | Initializes runtime settings with the settings in a given JSON string. |
+| [resetSettings](./code-parser.md#resetsettings)            | Resets runtime settings to default.                                    |
+| [parse](./code-parser.md#parse)                            | Parses code data for readable results.                                 |
 
 ## Interfaces
 

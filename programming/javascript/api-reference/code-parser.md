@@ -15,9 +15,9 @@ The `CodeParser` class enable users to parse given bytes or a string.
 | `static` [createInstance()](#createinstance) | Initializes a new instance of the `CodeParser` class.                  |
 | [dispose()](#dispose)                        | Releases all resources used by the `CodeParser` object.                |
 | [disposed](#disposed)                        | Returns whether the `CodeParser` object has been disposed of.          |
-| [`initSettings`](#initsettings)              | Initializes runtime settings with the settings in a given JSON string. |
-| [`resetSettings`](#resetsettings)            | Resets runtime settings to default.                                    |
-| [`parse`](#parse)                            | Parses code data for readable results.                                 |
+| [initSettings](#initsettings)              | Initializes runtime settings with the settings in a given JSON string. |
+| [resetSettings](#resetsettings)            | Resets runtime settings to default.                                    |
+| [parse](#parse)                            | Parses code data for readable results.                                 |
 
 ## createInstance
 
@@ -131,8 +131,8 @@ parse: (source: Array<number> | string, taskSettingName?: string) => Promise<Par
 
 * `source`: the array of bytes or the string to parse.
 
-* `taskSettingName`: the name of [`CodeParserTaskSetting`]({{site.parameters}}file/task-settings/code-parser-task-settings.html) that defines the settings used for code parsing.
+* `taskSettingName`: the name of [CodeParserTaskSetting]({{site.parameters}}file/task-settings/code-parser-task-settings.html) that defines the settings used for code parsing.
 
 **Return Value**
 
-Returns an array of [`ParsedResultItem`](./interface/ParsedResultItem.md) containing the human-readable results.
+Returns an array of [ParsedResultItem](./interface/ParsedResultItem.md) containing the human-readable results.
