@@ -24,15 +24,15 @@ interface ParsedResult {
 }
 ```
 
-| API Name                               | Description                                                 |
-| -------------------------------------- | ----------------------------------------------------------- |
-| [originalImageHashId](#codetype)       | Returns the hash id of the original image.                  |
-| [originalImageTag](#jsonstring)        | Returns the tag of the original image.                      |
-| [parsedResultItems](#parsedfields)     | Returns an array that contains all `ParsedResultItem`s.     |
-| [hasItem()](#getfieldvalue)            | Checks whether the specified `ParsedResultItem` exists.     |
-| [removeItem()](#getfieldmappingstatus) | Removes the specified `ParsedResultItem`.                   |
-| [errorCode](#parsedfields)             | Returns the error code for the parsing operation.           |
-| [errorString](#parsedfields)           | Returns the error string that corresponds with `errorCode`. |
+| API Name                                    | Description                                                 |
+| ------------------------------------------- | ----------------------------------------------------------- |
+| [originalImageHashId](#originalimagehashid) | Returns the hash id of the original image.                  |
+| [originalImageTag](#originalimagetag)       | Returns the tag of the original image.                      |
+| [parsedResultItems](#parsedresultitems)     | Returns an array that contains all `ParsedResultItem`s.     |
+| [hasItem()](#hasitem)                       | Checks whether the specified `ParsedResultItem` exists.     |
+| [removeItem()](#removeitem)                 | Removes the specified `ParsedResultItem`.                   |
+| [errorCode](#errorcode)                     | Returns the error code for the parsing operation.           |
+| [errorString](#errorstring)                 | Returns the error string that corresponds with `errorCode`. |
 
 ## originalImageHashId
 

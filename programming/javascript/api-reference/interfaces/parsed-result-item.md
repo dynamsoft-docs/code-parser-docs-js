@@ -16,8 +16,7 @@ The ParsedResultItem interface provides a structure representing the result item
 interface ParsedResultItem extends Core.CapturedResultItem {
     codeType: string;
     jsonString: string;
-    parsedFields: Array<{ name: string, value: string }>;
-    getFieldValue(fieldName: string): Promise<string>;
+    getFieldValue: (fieldName: string) => Promise<string>;
     getFieldMappingStatus: (fieldName: string) => EnumMappingStatus;
     getFieldValidationStatus: (fieldName: string) => EnumValidationStatus;
 }
@@ -27,11 +26,9 @@ interface ParsedResultItem extends Core.CapturedResultItem {
 | ------------------------------------------------------- | ----------------------------------------------------------------------- |
 | [codeType](#codetype)                                   | Returns the code type of the parsed result.                             |
 | [jsonString](#jsonstring)                               | Returns the parsed result as a JSON formatted string.                   |
-| [parsedFields](#parsedfields)                           | Returns an array that contains all parsed fields.                       |
 | [getFieldValue()](#getfieldvalue)                       | Gets the value of a specified field from the parsed result.             |
 | [getFieldMappingStatus()](#getfieldmappingstatus)       | Gets the mapping status of a specified field from the parsed result.    |
 | [getFieldValidationStatus()](#getfieldvalidationstatus) | Gets the validation status of a specified field from the parsed result. |
-
 
 ## codeType
 
@@ -47,14 +44,6 @@ Returns the parsed result as a JSON formatted string.
 
 ```ts
 jsonString: string;
-```
-
-## parsedFields
-
-Returns an array that contains all parsed fields.
-
-```ts
-parsedFields: Array<{ name: string, value: string }>;
 ```
 
 ## getFieldValue
