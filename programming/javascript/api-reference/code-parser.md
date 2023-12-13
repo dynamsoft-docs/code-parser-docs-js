@@ -111,6 +111,10 @@ initSettings: (settings: string) => Promise<void>;
 
 * `settings`: A JSON string that represents the content of the settings.
 
+**Return value**
+
+Returns a promise that resolves when the initializing finishes.
+
 ## resetSettings
 
 Resets all parameters to default values.
@@ -118,6 +122,14 @@ Resets all parameters to default values.
 ```typescript
 resetSettings: () => void;
 ```
+
+**Parameters**
+
+None.
+
+**Return value**
+
+`void`
 
 ## parse
 
