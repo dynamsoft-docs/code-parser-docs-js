@@ -15,9 +15,9 @@ The `CodeParser` class enable users to parse given bytes or a string.
 | `static` [createInstance()](#createinstance) | Initializes a new instance of the `CodeParser` class.                  |
 | [dispose()](#dispose)                        | Releases all resources used by the `CodeParser` object.                |
 | [disposed](#disposed)                        | Returns whether the `CodeParser` object has been disposed of.          |
-| [initSettings](#initsettings)              | Initializes runtime settings with the settings in a given JSON string. |
-| [resetSettings](#resetsettings)            | Resets runtime settings to default.                                    |
-| [parse](#parse)                            | Parses code data for readable results.                                 |
+| [initSettings](#initsettings)                | Initializes runtime settings with the settings in a given JSON string. |
+| [resetSettings](#resetsettings)              | Resets runtime settings to default.                                    |
+| [parse](#parse)                              | Parses code data for readable results.                                 |
 
 ## createInstance
 
@@ -40,7 +40,7 @@ A promise that resolves to the initialized `CodeParser` object.
 **Code snippet**
 
 ```javascript
-let parser = await Dynamsoft.CVR.CodeParser.createInstance();
+let parser = await Dynamsoft.DCP.CodeParser.createInstance();
 ```
 
 ## dispose
@@ -64,7 +64,7 @@ Returns a promise that resolves when the resources have been successfully releas
 **Code snippet**
 
 ```javascript
-let parser = await Dynamsoft.CVR.CodeParser.createInstance();
+let parser = await Dynamsoft.DCP.CodeParser.createInstance();
 // Use the parser to perform a job.
 // ...
 // Release the resources after the job is finished.
@@ -120,7 +120,7 @@ Returns a promise that resolves when the initializing finishes.
 Resets all parameters to default values.
 
 ```typescript
-resetSettings: () => void;
+resetSettings: () => Promise<void>;
 ```
 
 **Parameters**
@@ -129,14 +129,14 @@ None.
 
 **Return value**
 
-`void`
+Returns a promise that resolves when the settings have been successfully reset to their default values.
 
 ## parse
 
 Parses code data for human-readable results.
 
 ```typescript
-parse: (source: Array<number> | string, taskSettingName?: string) => Promise<ParsedResultItem>;
+parse: (source: Uint8Array | string, taskSettingName?: string) => Promise<ParsedResultItem>;
 ```
 
 **Parameters**

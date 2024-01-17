@@ -9,7 +9,7 @@ noTitleIndex: true
 ---
 <!-- 2.0.20 -- Updated on 12/11/2023-->
 
-# CodeParser Module
+# DynamsoftCodeParser Module
 
 The CodeParser module is defined in the namespace `Dynamsoft.DCP`. It includes the classes `CodeParser` and `CodeParserModule` along with a few interfaces and enumerations.
 
@@ -17,9 +17,10 @@ The CodeParser module is defined in the namespace `Dynamsoft.DCP`. It includes t
 
 This class defines common functionality in the `CodeParser` module. At present, there is only one API.
 
-| API Name                                                          | Description                                   |
-| ----------------------------------------------------------------- | --------------------------------------------- |
-| `static` [getVersion()](./code-parser-module-class.md#getversion) | Returns the version of the CodeParser module. |
+| API Name                                                          | Description                                                 |
+| ----------------------------------------------------------------- | ----------------------------------------------------------- |
+| `static` [getVersion()](./code-parser-module-class.md#getversion) | Returns the version of the CodeParser module.               |
+| `static` [loadSpec()](./code-parser-module-class.md#loadspec)     | Loads the specification for a certain type of code strings. |
 
 ## CodeParser Class
 
@@ -30,9 +31,9 @@ The `CodeParser` class enable users to parse given bytes or a string.
 | `static` [createInstance()](./code-parser.md#createinstance) | Initializes a new instance of the `CodeParser` class.                  |
 | [dispose()](./code-parser.md#dispose)                        | Releases all resources used by the `CodeParser` object.                |
 | [disposed](./code-parser.md#disposed)                        | Returns whether the `CodeParser` object has been disposed of.          |
-| [initSettings](./code-parser.md#initsettings)              | Initializes runtime settings with the settings in a given JSON string. |
-| [resetSettings](./code-parser.md#resetsettings)            | Resets runtime settings to default.                                    |
-| [parse](./code-parser.md#parse)                            | Parses code data for readable results.                                 |
+| [initSettings](./code-parser.md#initsettings)                | Initializes runtime settings with the settings in a given JSON string. |
+| [resetSettings](./code-parser.md#resetsettings)              | Resets runtime settings to default.                                    |
+| [parse](./code-parser.md#parse)                              | Parses code data for readable results.                                 |
 
 ## Interfaces
 
