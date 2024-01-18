@@ -229,7 +229,7 @@ Dynamsoft.Core.CoreModule.engineResourcePaths.dcp = "https://cdn.jsdelivr.net/np
 
 #### Load the specification for parsing
 
-The SDK requires the specification of the code string to parse it. If we are going to parse the MRZ strings found on passports, we need the specification "MRTD_TD3_PASSPORT". 
+The SDK requires the specification of the code string to parse it. If we are going to parse the MRZ strings found on passports, we need the specification "MRTD\_TD3\_PASSPORT". 
 
 ```javascript
 await Dynamsoft.DCP.CodeParserModule.loadSpec("MRTD_TD3_PASSPORT");
