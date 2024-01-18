@@ -10,7 +10,7 @@ noTitleIndex: true
 
 # Release Notes for JavaScript SDK - 2.x
 
-## 2.0.20 (12/xx/2023)
+## 2.0.20 (01/19/2024)
 
 ### Changelog
 
@@ -50,4 +50,4 @@ The following shows the API changes
 
 1. The method `initSettings()` can be used to set up a `CodeParser` instance for a parsing task.
 2. The method `resetSettings()` can be used to reset a `CodeParser` instance to the default settings.
-3. The property `disposed` returns whether a `CodeParser` instance has been disposed of.
+3. The property `disposed` returns whether a `CodeParser` instance has been disposed.
