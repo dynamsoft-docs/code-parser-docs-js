@@ -7,16 +7,25 @@ needAutoGenerateSidebar: true
 needGenerateH3Content: true
 ---
 
-# JavaScript Documentation
+# Dynamsoft Code Parser JavaScript Edition Documentation
+
+This is the index page of the documentation for Dynamsoft Code Parser JavaScript Edition.
 
 ## Getting Started
 
-- [User Guide](user-guide.md)
+To learn how to use the JavaScript edition of Dynamsoft Code Parser in your website, read:
+
+- [User Guide](user-guide/index.md)
 
 ## API Reference
+
+For a overview of the APIs, see:
 
 - [API Reference](api-reference/index.md)
 
 ## Release Notes
 
-- [Version 1.x](release-notes/js-1.md)
+For a peek of DBR history, check:
+
+- [Release Notes](release-notes/index.md)
+

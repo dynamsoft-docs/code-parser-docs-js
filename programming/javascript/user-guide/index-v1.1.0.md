@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: User Guide - Dynamsoft Code Parser for JavaScript
-description: This is the user guide page of Dynamsoft Code Parser for JavaScript SDK.
+title: User Guide - Dynamsoft Code Parser for JavaScript v1.x
+description: This is the user guide page of Dynamsoft Code Parser for JavaScript SDK v1.x.
 keywords: user guide, javascript
 breadcrumbText: User Guide
 noTitleIndex: true
@@ -19,12 +19,21 @@ In this guide, you will learn step by step on how to integrate the DCP-JS SDK in
 
 <span style="font-size:20px">Table of Contents</span>
 
-* [Hello World - Simplest Implementation](#hello-world---simplest-implementation)
-* [Building your own page](#building-your-own-page)
-  * [Include the SDK](#include-the-sdk)
-  * [Configure the SDK](#configure-the-sdk)
-  * [Interact with the SDK](#interact-with-the-sdk)
-* [API Documentation](#api-documentation)
+- [Dynamsoft Code Parser for Your Website](#dynamsoft-code-parser-for-your-website)
+  - [Hello World - Simplest Implementation](#hello-world---simplest-implementation)
+    - [About the code](#about-the-code)
+  - [Building your own page](#building-your-own-page)
+    - [Include the SDK](#include-the-sdk)
+      - [Use a CDN](#use-a-cdn)
+      - [Host the SDK yourself](#host-the-sdk-yourself)
+    - [Configure the SDK](#configure-the-sdk)
+      - [Specify the license](#specify-the-license)
+      - [Specify the location of the "engine" files](#specify-the-location-of-the-engine-files)
+    - [Interact with the SDK](#interact-with-the-sdk)
+      - [Create a `CodeParser` object](#create-a-codeparser-object)
+      - [Set code format](#set-code-format)
+      - [Parse code](#parse-code)
+  - [API Documentation](#api-documentation)
 
 ## Hello World - Simplest Implementation
 

@@ -2,6 +2,10 @@
 <html lang="en-US">
 
 {%- include head.html -%}
+{%- assign noTitleIndex = "" -%}
+{%- if page.noTitleIndex or page.url contains 'release-notes' -%}
+    {%- assign noTitleIndex = "noTitleIndex" -%}
+{%- endif -%}
 
 <body class="dlrDoc">
     {% assign url = 'https://www.dynamsoft.com/shared/head/' %}
