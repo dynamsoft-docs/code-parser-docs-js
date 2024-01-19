@@ -51,7 +51,7 @@ The complete code of the "Hello World" example is shown below:
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-core@3.0.31/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-core@3.0.30/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dynamsoft-license@3.0.20/dist/license.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dynamsoft-code-parser@2.0.20/dist/dcp.js"></script>
 </head>
@@ -136,7 +136,7 @@ The simplest way to include the SDK is to use either the [jsDelivr](https://jsde
 * jsDelivr
 
     ```html
-    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-core@3.0.31/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-core@3.0.30/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dynamsoft-license@3.0.20/dist/license.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dynamsoft-code-parser@2.0.20/dist/dcp.js"></script>
     ```
@@ -144,7 +144,7 @@ The simplest way to include the SDK is to use either the [jsDelivr](https://jsde
 * UNPKG  
 
     ```html
-    <script src="https://unpkg.com/dynamsoft-core@3.0.31/dist/core.js"></script>
+    <script src="https://unpkg.com/dynamsoft-core@3.0.30/dist/core.js"></script>
     <script src="https://unpkg.com/dynamsoft-license@3.0.20/dist/license.js"></script>
     <script src="https://unpkg.com/dynamsoft-code-parser@2.0.20/dist/dcp.js"></script>
     ```
@@ -162,7 +162,7 @@ Options to download the SDK:
 * yarn
 
     ```cmd
-    yarn add dynamsoft-core@3.0.31 --save
+    yarn add dynamsoft-core@3.0.30 --save
     yarn add dynamsoft-license@3.0.20 --save
     yarn add dynamsoft-code-parser@2.0.20 --save
     ```
@@ -170,7 +170,7 @@ Options to download the SDK:
 * npm
 
     ```cmd
-    npm install dynamsoft-core@3.0.31 --save
+    npm install dynamsoft-core@3.0.30 --save
     npm install dynamsoft-license@3.0.20 --save
     npm install dynamsoft-code-parser@2.0.20 --save
     ```
@@ -179,7 +179,7 @@ Depending on how you downloaded the SDK and where you put it, you can typically 
 
 ```html
 <!-- Upon extracting the zip package into your project, you can generally include it in the following manner -->
-<script src="./dynamsoft/distributables/dynamsoft-core@3.0.31/dist/core.js"></script>
+<script src="./dynamsoft/distributables/dynamsoft-core@3.0.30/dist/core.js"></script>
 <script src="./dynamsoft/distributables/dynamsoft-license@3.0.20/dist/license.js"></script>
 <script src="./dynamsoft/distributables/dynamsoft-code-parser@2.0.20/dist/dcp.js"></script>
 ```
@@ -220,7 +220,7 @@ The purpose is to tell the SDK where to find the engine files (\*.worker.js, \*.
 
 ```javascript
 //The following code uses the jsDelivr CDN, feel free to change it to your own location of these files
-Dynamsoft.Core.CoreModule.engineResourcePaths.core = "https://cdn.jsdelivr.net/npm/dynamsoft-core@3.0.31/dist/";
+Dynamsoft.Core.CoreModule.engineResourcePaths.core = "https://cdn.jsdelivr.net/npm/dynamsoft-core@3.0.30/dist/";
 Dynamsoft.Core.CoreModule.engineResourcePaths.license = "https://cdn.jsdelivr.net/npm/dynamsoft-license@3.0.20/dist/";
 Dynamsoft.Core.CoreModule.engineResourcePaths.dcp = "https://cdn.jsdelivr.net/npm/dynamsoft-code-parser@2.0.20/dist/";
 ```
