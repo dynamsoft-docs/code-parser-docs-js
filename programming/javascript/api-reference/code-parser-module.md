@@ -42,5 +42,5 @@ The `CodeParser` class enable users to parse given bytes or a string.
 
 ## Enumerations
 
-* [EnumMappingStatus]({{ site.dcv_enumerations }}code-parser/mapping-status.md)
-* [EnumValidationStatus]({{ site.dcv_enumerations }}code-parser/validation-status.md)
+* [EnumMappingStatus]({{ site.dcv_enumerations }}code-parser/mapping-status.html)
+* [EnumValidationStatus]({{ site.dcv_enumerations }}code-parser/validation-status.html)

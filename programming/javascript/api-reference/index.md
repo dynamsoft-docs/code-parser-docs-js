@@ -15,5 +15,5 @@ noTitleIndex: true
 In versions 2.x and higher, Dynamsoft Code Parser JavaScript Edition includes the following modules:
 
 * [CodeParser](./code-parser-module.md)
-* [License]({{ site.dcv_js_api }}license/license-module.md)
-* [Core]({{ site.dcv_js_api }}core/core-module.md)
+* [License]({{ site.dcv_js_api }}license/license-module.html)
+* [Core]({{ site.dcv_js_api }}core/core-module.html)
