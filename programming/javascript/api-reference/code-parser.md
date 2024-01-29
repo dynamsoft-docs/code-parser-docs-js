@@ -143,7 +143,7 @@ parse: (source: Uint8Array | string, taskSettingName?: string) => Promise<Parsed
 
 * `source`: the array of bytes or the string to parse.
 
-* `taskSettingName`: the name of [CodeParserTaskSetting]({{site.parameters}}file/task-settings/code-parser-task-settings.html) that defines the settings used for code parsing.
+* `taskSettingName`: the name of [CodeParserTaskSetting](https://www.dynamsoft.com/capture-vision/docs/core/parameters/reference/code-parser-task-settings/) that defines the settings used for code parsing.
 
 **Return Value**
 

@@ -157,7 +157,7 @@ Options to download the SDK:
 
 - From the website
 
-  [Download the JavaScript ZIP package](https://www.dynamsoft.com/code-parser/downloads/?ver=2.0.20&utm_source=guide)
+  Sign in the [Customer Portal](https://www.dynamsoft.com/customer/index?utm_source=docs&product=dcp) and Download the JavaScript ZIP package
 
 * yarn
 
