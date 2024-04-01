@@ -10,6 +10,14 @@ noTitleIndex: true
 
 # Release Notes for JavaScript SDK - 2.x
 
+## 2.2.10 (04/01/2024)
+
+### Fixed
+
+* Fixed a bug where the same map file is requested more than once.
+
+* Fixed type definition not found issue under TypeScript 5.x version.
+
 ## 2.0.20 (01/19/2024)
 
 ### Changelog
