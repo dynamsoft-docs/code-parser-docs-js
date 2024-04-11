@@ -24,7 +24,7 @@ interface ParsedResult {
 }
 ```
 
-| API Name                                    | Description                                                 |
+<!-- | API Name                                    | Description                                                 |
 | ------------------------------------------- | ----------------------------------------------------------- |
 | [originalImageHashId](#originalimagehashid) | Returns the hash id of the original image.                  |
 | [originalImageTag](#originalimagetag)       | Returns the tag of the original image.                      |
@@ -32,7 +32,7 @@ interface ParsedResult {
 | [hasItem()](#hasitem)                       | Checks whether the specified `ParsedResultItem` exists.     |
 | [removeItem()](#removeitem)                 | Removes the specified `ParsedResultItem`.                   |
 | [errorCode](#errorcode)                     | Returns the error code for the parsing operation.           |
-| [errorString](#errorstring)                 | Returns the error string that corresponds with `errorCode`. |
+| [errorString](#errorstring)                 | Returns the error string that corresponds with `errorCode`. | -->
 
 ## originalImageHashId
 

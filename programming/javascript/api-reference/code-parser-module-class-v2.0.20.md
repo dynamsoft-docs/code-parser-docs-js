@@ -37,7 +37,7 @@ console.log(version);
 Loads the specification for a certain type of code strings.
 
 ```typescript
-loadSpec(specificationName: string | Array<string>, specificationPath?: string): Promise<void>;
+loadSpec(specificationName: string, specificationPath?: string): Promise<void>;
 ```
 
 **Parameters**

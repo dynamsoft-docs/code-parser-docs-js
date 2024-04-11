@@ -10,6 +10,20 @@ noTitleIndex: true
 
 # Release Notes for JavaScript SDK - 2.x
 
+## 2.2.10 (04/11/2024)
+
+### Improved
+
+* Security update for `DynamsoftCodeParser` library and other corresponding libraries.
+
+* Update the API [`loadSpec`]({{ site.dcp_js_api }}code-parser-module-class.html#loadspec) to supporting loading multiple specifications at a time.
+
+### Fixed
+
+* Fixed a bug where the same map file is requested more than once.
+
+* Fixed type definition not found issue under TypeScript 5.x version.
+
 ## 2.0.20 (01/19/2024)
 
 ### Changelog

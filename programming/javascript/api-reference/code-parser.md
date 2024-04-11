@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # CodeParser Class
 
-The `CodeParser` class enable users to parse given bytes or a string.
+The `CodeParser` class enable users to parse given bytes or a string to be human-readable.
 
 | Method                                       | Description                                                            |
 | -------------------------------------------- | ---------------------------------------------------------------------- |
@@ -113,7 +113,7 @@ initSettings: (settings: string) => Promise<void>;
 
 **Return value**
 
-Returns a promise that resolves when the initializing finishes.
+A promise that resolves when the operation has completed. It does not provide any value upon resolution.
 
 ## resetSettings
 
@@ -133,7 +133,7 @@ Returns a promise that resolves when the settings have been successfully reset t
 
 ## parse
 
-Parses code data for human-readable results.
+Parses a single string to be human-readable.
 
 ```typescript
 parse: (source: Uint8Array | string, taskSettingName?: string) => Promise<ParsedResultItem>;
