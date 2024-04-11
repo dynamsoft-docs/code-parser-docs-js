@@ -10,7 +10,13 @@ noTitleIndex: true
 
 # Release Notes for JavaScript SDK - 2.x
 
-## 2.2.10 (04/01/2024)
+## 2.2.10 (04/11/2024)
+
+### Improved
+
+* Security update for `DynamsoftCodeParser` library and other corresponding libraries.
+
+* Update the API [`loadSpec`]({{ site.dcp_js_api }}code-parser-module-class.html#loadspec) to supporting loading multiple specifications at a time.
 
 ### Fixed
 

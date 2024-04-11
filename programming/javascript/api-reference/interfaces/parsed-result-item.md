@@ -22,13 +22,13 @@ interface ParsedResultItem extends Core.CapturedResultItem {
 }
 ```
 
-| API Name                                                | Description                                                             |
+<!-- | API Name                                                | Description                                                             |
 | ------------------------------------------------------- | ----------------------------------------------------------------------- |
 | [codeType](#codetype)                                   | Returns the code type of the parsed result.                             |
 | [jsonString](#jsonstring)                               | Returns the parsed result as a JSON formatted string.                   |
 | [getFieldValue()](#getfieldvalue)                       | Gets the value of a specified field from the parsed result.             |
 | [getFieldMappingStatus()](#getfieldmappingstatus)       | Gets the mapping status of a specified field from the parsed result.    |
-| [getFieldValidationStatus()](#getfieldvalidationstatus) | Gets the validation status of a specified field from the parsed result. |
+| [getFieldValidationStatus()](#getfieldvalidationstatus) | Gets the validation status of a specified field from the parsed result. | -->
 
 ## codeType
 
