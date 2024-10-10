@@ -136,7 +136,7 @@ Returns a promise that resolves when the settings have been successfully reset t
 Parses a single string to be human-readable.
 
 ```typescript
-parse: (source: Uint8Array | string | Array<number>, taskSettingName?: string) => Promise<ParsedResultItem>;
+parse: (source: Uint8Array | string, taskSettingName?: string) => Promise<ParsedResultItem>;
 ```
 
 **Parameters**

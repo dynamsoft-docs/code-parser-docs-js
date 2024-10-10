@@ -27,7 +27,8 @@ dnt_icon: /code-parser/docs/web/assets/img-icon/icon-dnt.svg
 release_notes: /code-parser/docs/core/release-notes/
 code_types: /code-parser/docs/core/code-types/
 
-useVersionTree: true
+useVersionTree: false
+isDCV: true
 
 baseurl: "/code-parser/docs/web"
 plugins:
