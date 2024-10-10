@@ -1,35 +1,35 @@
 repositoryUrl: https://github.com/dynamsoft-docs/code-parser-docs-js/blob/main
 repository: dynamsoft-docs/code-parser-docs-js
-docFullPath: https://www.dynamsoft.com/code-parser/docs/web
-firstLevelUrl: /code-parser/docs/web/
+docFullPath: https://www.dynamsoft.com/code-parser/docs-archive/web
+firstLevelUrl: /code-parser/docs-archive/web/
 docRootName: "Code Parser JS Edition"
-docHomePage: /code-parser/docs/core/introduction/
+docHomePage: /code-parser/docs-archive/core/introduction/
 
-js: /code-parser/docs/web/programming/javascript/
-dcp_js_api: /code-parser/docs/web/programming/javascript/api-reference/
-dcp_enum: /code-parser/docs/web/programming/javascript/api-reference/enum/
-js_release_notes: /code-parser/docs/web/programming/javascript/release-notes/
-enums: /capture-vision/docs/core/enums/
+js: /code-parser/docs-archive/web/programming/javascript/
+dcp_js_api: /code-parser/docs-archive/web/programming/javascript/api-reference/
+dcp_enum: /code-parser/docs-archive/web/programming/javascript/api-reference/enum/
+js_release_notes: /code-parser/docs-archive/web/programming/javascript/release-notes/
+enums: /capture-vision/docs-archive/core/enums/
 
-dcv_enumerations: /capture-vision/docs/core/enums/
+dcv_enumerations: /capture-vision/docs-archive/core/enums/
 
-dcv_js_api: /capture-vision/docs/web/programming/javascript/api-reference/
-dcv_introduction: /capture-vision/docs/core/introduction/
+dcv_js_api: /capture-vision/docs-archive/web/programming/javascript/api-reference/
+dcv_introduction: /capture-vision/docs-archive/core/introduction/
 
-assets: /code-parser/docs/web/assets/
-edit_icon: /code-parser/docs/web/assets/img-icon/edit-icon.png
-smile_icon: /code-parser/docs/web/assets/img-icon/icon-smile.png
-sad_icon: /code-parser/docs/web/assets/img-icon/icon-sad.png
-dbr_icon: /code-parser/docs/web/assets/img-icon/icon-dbr.svg
-dwt_icon: /code-parser/docs/web/assets/img-icon/icon-dwt.svg
-dnt_icon: /code-parser/docs/web/assets/img-icon/icon-dnt.svg
+assets: /code-parser/docs-archive/web/assets/
+edit_icon: /code-parser/docs-archive/web/assets/img-icon/edit-icon.png
+smile_icon: /code-parser/docs-archive/web/assets/img-icon/icon-smile.png
+sad_icon: /code-parser/docs-archive/web/assets/img-icon/icon-sad.png
+dbr_icon: /code-parser/docs-archive/web/assets/img-icon/icon-dbr.svg
+dwt_icon: /code-parser/docs-archive/web/assets/img-icon/icon-dwt.svg
+dnt_icon: /code-parser/docs-archive/web/assets/img-icon/icon-dnt.svg
 
-release_notes: /code-parser/docs/core/release-notes/
-code_types: /code-parser/docs/core/code-types/
+release_notes: /code-parser/docs-archive/core/release-notes/
+code_types: /code-parser/docs-archive/core/code-types/
 
 useVersionTree: true
 
-baseurl: "/code-parser/docs/web"
+baseurl: "/code-parser/docs-archive/web"
 plugins:
   - jemoji
   - jekyll-sitemap
@@ -52,7 +52,7 @@ defaults:
       path: "programming/javascript" 
     values: 
       docRootName: "Code Parser JS Edition" 
-      docHomePage: "/code-parser/docs/web/programming/javascript/"
+      docHomePage: "/code-parser/docs-archive/web/programming/javascript/"
   - scope:
       path: "Hide_Tree_Page.html"
     values:
