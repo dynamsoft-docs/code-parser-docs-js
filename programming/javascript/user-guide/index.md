@@ -35,7 +35,6 @@ In this guide, you will learn step by step on how to integrate the SDK into your
       - [Create a `CodeParser` object](#create-a-codeparser-object)
       - [Start Parsing](#start-parsing)
   - [System requirements](#system-requirements)
-  - [Release notes](#release-notes)
   - [API Documentation](#api-documentation)
 
 ## Hello World
@@ -281,9 +280,9 @@ The following table is a list of supported browsers based on the above requireme
 
 Apart from the browsers, the operating systems may impose some limitations of their own that could restrict the use of the SDK.
 
-## Release notes
+<!-- ## Release notes
 
-Learn what are included in each release at [Dynamsoft Code Parser JavaScript Edition Release Notes](https://www.dynamsoft.com/code-parser/docs/web/programming/javascript/release-notes/?ver=latest).
+Learn what are included in each release at [Dynamsoft Code Parser JavaScript Edition Release Notes](https://www.dynamsoft.com/code-parser/docs/web/programming/javascript/release-notes/?ver=latest). -->
 
 ## API Documentation
 
