@@ -17,7 +17,6 @@ interface ParsedResultItem extends Core.CapturedResultItem {
     codeType: string;
     jsonString: string;
     getFieldValue: (fieldName: string) => string;
-    getFieldRawValue: (fieldName: string) => string;
     getFieldMappingStatus: (fieldName: string) => EnumMappingStatus;
     getFieldValidationStatus: (fieldName: string) => EnumValidationStatus;
 }
@@ -67,28 +66,6 @@ A string which contains the field value.
 
 ```js
 parser.getFieldValue("passportNumber");
-```
-
-## getFieldRawValue
-
-Gets the value of a specified field from the parsed result, without mapping process.
-
-```ts
-getFieldRawValue(fieldName: string): string;
-```
-
-**Parameters**
-
-`fieldName`: specifies the name of the field.
-
-**Return Value**
-
-A string which contains the field raw value.
-
-**Code Snippet**
-
-```js
-parser.getFieldRawValue("passportNumber");
 ```
 
 ## getFieldMappingStatus

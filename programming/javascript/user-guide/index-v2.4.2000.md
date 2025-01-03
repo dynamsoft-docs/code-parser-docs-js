@@ -50,9 +50,9 @@ The complete code of the "Hello World" example is shown below:
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-core@3.4.31/dist/core.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-license@3.4.31/dist/license.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-code-parser@2.4.32/dist/dcp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-core@3.4.20/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-license@3.4.20/dist/license.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-code-parser@2.4.22/dist/dcp.js"></script>
 </head>
 <body>
 <div
@@ -135,17 +135,17 @@ The simplest way to include the SDK is to use either the [jsDelivr](https://jsde
 * jsDelivr
 
     ```html
-    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-core@3.4.31/dist/core.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-license@3.4.31/dist/license.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-code-parser@2.4.32/dist/dcp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-core@3.4.20/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-license@3.4.20/dist/license.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-code-parser@2.4.22/dist/dcp.js"></script>
     ```
 
 * UNPKG  
 
     ```html
-    <script src="https://unpkg.com/dynamsoft-core@3.4.31/dist/core.js"></script>
-    <script src="https://unpkg.com/dynamsoft-license@3.4.31/dist/license.js"></script>
-    <script src="https://unpkg.com/dynamsoft-code-parser@2.4.32/dist/dcp.js"></script>
+    <script src="https://unpkg.com/dynamsoft-core@3.4.20/dist/core.js"></script>
+    <script src="https://unpkg.com/dynamsoft-license@3.4.20/dist/license.js"></script>
+    <script src="https://unpkg.com/dynamsoft-code-parser@2.4.22/dist/dcp.js"></script>
     ```
 
 #### Host the SDK yourself
@@ -157,18 +157,18 @@ Options to download the SDK:
 * npm
 
     ```cmd
-    npm install dynamsoft-core@3.4.31 --save
-    npm install dynamsoft-license@3.4.31 --save
-    npm install dynamsoft-code-parser@2.4.32 --save
+    npm install dynamsoft-core@3.4.20 --save
+    npm install dynamsoft-license@3.4.20 --save
+    npm install dynamsoft-code-parser@2.4.22 --save
     ```
 
 Depending on how you downloaded the SDK and where you put it, you can typically include it like this:
 
 ```html
 <!-- Upon extracting the zip package into your project, you can generally include it in the following manner -->
-<script src="./dynamsoft/distributables/dynamsoft-core@3.4.31/dist/core.js"></script>
-<script src="./dynamsoft/distributables/dynamsoft-license@3.4.31/dist/license.js"></script>
-<script src="./dynamsoft/distributables/dynamsoft-code-parser@2.4.32/dist/dcp.js"></script>
+<script src="./dynamsoft/distributables/dynamsoft-core@3.4.20/dist/core.js"></script>
+<script src="./dynamsoft/distributables/dynamsoft-license@3.4.20/dist/license.js"></script>
+<script src="./dynamsoft/distributables/dynamsoft-code-parser@2.4.22/dist/dcp.js"></script>
 ```
 
 or
@@ -207,9 +207,9 @@ The purpose is to tell the SDK where to find the engine files (\*.worker.js, \*.
 
 ```javascript
 //The following code uses the jsDelivr CDN, feel free to change it to your own location of these files
-Dynamsoft.Core.CoreModule.engineResourcePaths.core = "https://cdn.jsdelivr.net/npm/dynamsoft-core@3.4.31/dist/";
-Dynamsoft.Core.CoreModule.engineResourcePaths.license = "https://cdn.jsdelivr.net/npm/dynamsoft-license@3.4.31/dist/";
-Dynamsoft.Core.CoreModule.engineResourcePaths.dcp = "https://cdn.jsdelivr.net/npm/dynamsoft-code-parser@2.4.32/dist/";
+Dynamsoft.Core.CoreModule.engineResourcePaths.core = "https://cdn.jsdelivr.net/npm/dynamsoft-core@3.4.20/dist/";
+Dynamsoft.Core.CoreModule.engineResourcePaths.license = "https://cdn.jsdelivr.net/npm/dynamsoft-license@3.4.20/dist/";
+Dynamsoft.Core.CoreModule.engineResourcePaths.dcp = "https://cdn.jsdelivr.net/npm/dynamsoft-code-parser@2.4.22/dist/";
 ```
 
 ### Interact with the SDK
