@@ -4,6 +4,8 @@ docFullPath: https://www.dynamsoft.com/code-parser/docs/web
 firstLevelUrl: /code-parser/docs/web/
 docRootName: "Code Parser JS Edition"
 docHomePage: /code-parser/docs/core/introduction/
+needSearchIndex: true
+searchNeedFilter: true
 
 js: /code-parser/docs/web/programming/javascript/
 dcp_js_api: /code-parser/docs/web/programming/javascript/api-reference/
