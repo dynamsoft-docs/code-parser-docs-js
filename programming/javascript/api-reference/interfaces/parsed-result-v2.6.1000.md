@@ -14,9 +14,13 @@ The ParsedResult interface provides a structure representing the result object r
 
 ```ts
 interface ParsedResult {
+  originalImageHashId: string;
+  originalImageTag: Core.ImageTag;
   parsedResultItems: Array<ParsedResultItem>;
   hasItem: (item: ParsedResultItem) => boolean;
   removeItem: (item: ParsedResultItem) => void;
+  errorCode: number;
+  errorString: string;
 }
 ```
 
@@ -30,6 +34,26 @@ interface ParsedResult {
 | [errorCode](#errorcode)                     | Returns the error code for the parsing operation.           |
 | [errorString](#errorstring)                 | Returns the error string that corresponds with `errorCode`. | -->
 
+## originalImageHashId
+
+Returns the hash id of the original image.
+
+```ts
+originalImageHashId: string;
+```
+
+## originalImageTag
+
+Returns the tag of the original image.
+
+```ts
+originalImageTag: Core.ImageTag;
+```
+
+**See Also**
+
+* [ImageTag](https://www.dynamsoft.com/capture-vision/docs/web/programming/javascript/api-reference/core/basic-structures/image-tag.html)
+
 ## parsedResultItems
 
 Returns an array that contains all `ParsedResultItem`s.
@@ -41,3 +65,11 @@ Checks whether the specified `ParsedResultItem` exists.
 ## removeItem()
 
 Removes the specified `ParsedResultItem`.
+
+## errorCode
+
+Returns the error code for the parsing operation.
+
+## errorString
+
+Returns the error string that corresponds with `errorCode`.
