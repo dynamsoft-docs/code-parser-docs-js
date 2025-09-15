@@ -31,6 +31,7 @@ code_types: /code-parser/docs/core/code-types/
 
 useVersionTree: false
 isDCV: true
+useJSVersionV3: true
 
 baseurl: "/code-parser/docs/web"
 plugins:
