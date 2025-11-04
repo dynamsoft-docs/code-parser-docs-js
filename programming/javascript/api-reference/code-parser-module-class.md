@@ -16,6 +16,7 @@ The `CodeParserModule` class is defined in the namespace `Dynamsoft.DCP`.
 | ------------------------------------ | ----------------------------------------------------------- |
 | `static` [getVersion()](#getversion) | Returns the version of the `CodeParser` module.             |
 | `static` [loadSpec()](#loadspec)     | Loads the specification for a certain type of code strings. |
+| `static` [onSpecLoadProgressChanged()](#onspecloadprogresschanged)                        | An event that fires during the loading of specification files. |
 
 ### getVersion
 
@@ -50,3 +51,43 @@ loadSpec(specificationName: string | Array<string>, specificationPath?: string):
 ```javascript
 await Dynamsoft.DCP.CodeParserModule.loadSpec("AADHAAR");
 ```
+
+### onSpecLoadProgressChanged
+
+An event that fires during the loading of specification files.
+
+**Syntax**
+
+```typescript
+static onSpecLoadProgressChanged (filePath: string, tag: "starting"| "in progress" | "completed", progress: { loaded: number, total: number }) : void;
+```
+
+**Parameter**
+
+`filePath` : The path of the specification files.
+
+`tag`(Optional) : Indicates the ongoing status of the file download ("starting", "in progress", "completed").
+
+`progress` : An object indicating the progress of the download, with `loaded` and `total` bytes.
+
+**Return value**
+
+None.
+
+**Code snippet**
+
+```javascript
+Dynamsoft.DCP.CodeParserModule.onSpecLoadProgressChanged = function(filePath, tag, progress) {
+    console.log(`Status: ${tag} - File: ${filePath}`);
+    if (tag === "in progress") {
+        let percent = ((progress.loaded / progress.total) * 100).toFixed(1);
+        console.log(`Progress: ${percent}%`);
+    } else if (tag === "completed") {
+        console.log("specification files loading completed!");
+    }
+};
+```
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader Bundle version 11.2.2000 and Dynamsoft Capture Vision Bundle version 3.2.1000.
