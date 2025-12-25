@@ -44,13 +44,18 @@ loadSpec(specificationName: string | Array<string>, specificationPath?: string):
 **Parameters**
 
 * `specificationName`: specifies the name of the specification.
-* `specificationPath`: specifies the path to find the specification file. If not specified, the method will try to load the file from the path specified for the "dcp" module in `Dynamsoft.Core.CoreModule.engineResourcePaths`. For example, if the path for the "dcp" module is "https://cdn.jsdelivr.net/npm/dynamsoft-code-parser@2.0.20/dist/", then calling `Dynamsoft.DCP.CodeParserModule.loadSpec("AADHAAR")` will load the file "AADHAAR.data" from "https://cdn.jsdelivr.net/npm/dynamsoft-code-parser@2.0.20/dist/specification/AADHAAR.data".
+* `specificationPath`: specifies the path to find the specification file. If not specified, the method will try to load the file from the path specified in `Dynamsoft.Core.CoreModule.engineResourcePaths`. For example, if the engineResourcePaths.rootDirectory = "https://cdn.jsdelivr.net/npm/", then calling `Dynamsoft.DCP.CodeParserModule.loadSpec("AADHAAR")` will load the file "AADHAAR.data" from "https://cdn.jsdelivr.net/npm/dynamsoft-capture-vision-data/parser-resources/AADHAAR.data".
 
 **Code Snippet**
 
 ```javascript
 await Dynamsoft.DCP.CodeParserModule.loadSpec("AADHAAR");
 ```
+
+**Remarks**
+
+Starting from CaptureVisionBundle version 3.4.1000, some specification resources have been merged. The complete set of current resources can be found at:
+https://www.npmjs.com/package/dynamsoft-capture-vision-data
 
 ### onSpecLoadProgressChanged
 
