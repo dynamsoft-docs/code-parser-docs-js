@@ -54,7 +54,7 @@ await Dynamsoft.DCP.CodeParserModule.loadSpec("AADHAAR");
 
 **Remarks**
 
-Starting from CaptureVisionBundle version 3.4.1000, some specification resources have been merged. The complete set of current resources can be found at:
+Starting from CaptureVisionBundle version 3.4.2000, some specification resources have been merged. The complete set of current resources can be found at:
 https://www.npmjs.com/package/dynamsoft-capture-vision-data
 
 ### onSpecLoadProgressChanged
