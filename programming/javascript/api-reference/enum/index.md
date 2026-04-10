@@ -12,5 +12,6 @@ breadcrumbText: Enum Index
 
 Dynamsoft Code Parser JavaScript SDK 2.x has the following enums.
 
+* [EnumCodeType](./EnumCodeType.md)
 * [EnumMappingStatus](./EnumMappingStatus.md)
 * [EnumValidationStatus](./EnumValidationStatus.md)
