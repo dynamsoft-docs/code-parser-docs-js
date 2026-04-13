@@ -12,7 +12,7 @@ breadcrumbText: EnumCodeType
 
 ```ts
 enum EnumCodeType{
-    CT_MRTD_TD1_ID = "MRTD_TD1_ID ",
+    CT_MRTD_TD1_ID = "MRTD_TD1_ID",
     CT_MRTD_TD2_ID = "MRTD_TD2_ID",
     CT_MRTD_TD2_VISA = "MRTD_TD2_VISA",
     CT_MRTD_TD3_PASSPORT = "MRTD_TD3_PASSPORT",
