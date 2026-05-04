@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: ValidationStatus - Dynamsoft Code Parser Enumerations
-description: The enumeration ValidationStatus of Dynamsoft Code Parser describes the outcome of a validation process on a field.
+title: ValidationStatus Enum – Code Parser JS SDK Ref
+description: "Explore ValidationStatus values in Dynamsoft Code Parser JavaScript API and learn how they define status, configuration, and processing behavior for modern web."
 keywords: Validation status
 needGenerateH3Content: true
 needAutoGenerateSidebar: true
